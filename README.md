@@ -7,6 +7,7 @@ Useful git commands
 - [How to see my last commit](#howt-to-see-my-last-commit)
 - [How to output git log with the first line only?](#how-to-output-git-log-with-the-first-line-only)
 - [How can i view a git log of just one users](#how-can-i-view-a-git-log-of-just-one-user)
+- [How do I force git pull to overwire local files](how-do-i-force-git-pull-to-overwrite-local-files)
 
 ## How to see my last commit
 
@@ -39,3 +40,21 @@ git log --author=deiva
 ```
 
 <a href="https://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits?answertab=active#tab-top">credits</a>
+
+## How do I force git pull to overwire local files
+
+This command is useful when you got git <branch> | MERGING issues
+
+```md
+git fetch --all
+git reset --hard origin/master
+```
+or
+```md
+git reset --hard origin/<branch_name>
+```
+
+Note: the above command will overwrite your local files
+
+<a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files#8888015">credits</a>
+
