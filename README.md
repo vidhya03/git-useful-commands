@@ -7,8 +7,8 @@ Useful git commands
 - [How to see my last commit](#howt-to-see-my-last-commit)
 - [How to output git log with the first line only?](#how-to-output-git-log-with-the-first-line-only)
 - [How can i view a git log of just one users](#how-can-i-view-a-git-log-of-just-one-user)
-- [How do I force git pull to overwire local files](how-do-i-force-git-pull-to-overwrite-local-files)
-- [How do I determine the url of git repository](how-do-i-determine-the-url-of-git-repository)
+- [How do I force git pull to overwire local files](#how-do-i-force-git-pull-to-overwrite-local-files)
+- [How do I determine the url of git repository](#how-do-i-determine-the-url-of-git-repository)
 
 ## How to see my last commit
 
