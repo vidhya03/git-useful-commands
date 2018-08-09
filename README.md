@@ -8,6 +8,7 @@ Useful git commands
 - [How to output git log with the first line only?](#how-to-output-git-log-with-the-first-line-only)
 - [How can i view a git log of just one users](#how-can-i-view-a-git-log-of-just-one-user)
 - [How do I force git pull to overwire local files](how-do-i-force-git-pull-to-overwrite-local-files)
+- [How do I determine the url of git repository](how-do-i-determine-the-url-of-git-repository)
 
 ## How to see my last commit
 
@@ -57,4 +58,19 @@ git reset --hard origin/<branch_name>
 Note: the above command will overwrite your local files
 
 <a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files#8888015">credits</a>
+
+## How do I determine the url of git repository
+
+Get only the remote url
+```md
+git config --get remote.origin.url
+```
+or 
+Get the entire url
+```md
+ git remote show origin
+```
+
+<a href="https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=active#tab-top">credits</a>
+
 
