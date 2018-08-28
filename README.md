@@ -1,6 +1,5 @@
 # My useful git commands
-Useful git commands 
-
+Useful git commands
 
 ## Table of contents
 
@@ -9,16 +8,17 @@ Useful git commands
 - [How can i view a git log of just one user](#how-can-i-view-a-git-log-of-just-one-user)
 - [How do I force git pull to overwire local files](#how-do-i-force-git-pull-to-overwire-local-files)
 - [How do I determine the url of git repository](#how-do-i-determine-the-url-of-git-repository)
+- [How do I go to specific revision](#how-do-i-go-to-specific-revision)
 
 ## How to see my last commit
 
-This command is useful to see 'my last commit' 
+This command is useful to see 'my last commit'
 
-```md 
-`git log --name-status HEAD^..HEAD`
+```md
+git log --name-status HEAD^..HEAD
 ```
 
-## How to output git log with the first line only?
+## How to output git log with the first line only
 
 This command is useful to print commit history by one line
 
@@ -50,7 +50,9 @@ This command is useful when you got git <branch> | MERGING issues
 git fetch --all
 git reset --hard origin/master
 ```
+
 or
+
 ```md
 git reset --hard origin/<branch_name>
 ```
@@ -62,15 +64,37 @@ Note: the above command will overwrite your local files
 ## How do I determine the url of git repository
 
 Get only the remote url
+
 ```md
 git config --get remote.origin.url
 ```
-or 
+
+or
+
 Get the entire url
+
 ```md
  git remote show origin
 ```
 
 <a href="https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=active#tab-top">credits</a>
 
+## How do I determine the url of git repository
 
+Move to a specific commit or checkout to previous revision
+
+First note the sha or revision number
+
+```md
+git log --pretty=oneline --abbrev-commit
+```
+
+Then
+
+Check out the specific commit
+
+```md
+ git checkout <sha1 or revision>
+```
+
+<a href="https://stackoverflow.com/questions/7539130/go-to-particular-revision?answertab=active#tab-top">credits</a>
