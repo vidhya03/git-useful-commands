@@ -1,4 +1,5 @@
 # My useful git commands
+
 Useful git commands
 
 ## Table of contents
@@ -40,11 +41,11 @@ will match a commit made by "Vidhyadharan Deivamani" and also
 git log --author=deiva
 ```
 
-<a href="https://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits?answertab=active#tab-top">credits</a>
+[credits](https://stackoverflow.com/questions/4259996/how-can-i-view-a-git-log-of-just-one-users-commits?answertab=active#tab-top)
 
 ## How do I force git pull to overwire local files
 
-This command is useful when you got git <branch> | MERGING issues
+This command is useful when you got git < branch > | MERGING issues
 
 ```md
 git fetch --all
@@ -59,7 +60,7 @@ git reset --hard origin/<branch_name>
 
 Note: the above command will overwrite your local files
 
-<a href="https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files#8888015">credits</a>
+[credits](https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files#8888015)
 
 ## How do I determine the url of git repository
 
@@ -77,9 +78,9 @@ Get the entire url
  git remote show origin
 ```
 
-<a href="https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=active#tab-top">credits</a>
+[credits](https://stackoverflow.com/questions/4089430/how-can-i-determine-the-url-that-a-local-git-repository-was-originally-cloned-fr?answertab=active#tab-top)
 
-## How do I determine the url of git repository
+## How do I go to specific revision
 
 Move to a specific commit or checkout to previous revision
 
@@ -97,4 +98,4 @@ Check out the specific commit
  git checkout <sha1 or revision>
 ```
 
-<a href="https://stackoverflow.com/questions/7539130/go-to-particular-revision?answertab=active#tab-top">credits</a>
+[credits](https://stackoverflow.com/questions/7539130/go-to-particular-revision?answertab=active#tab-top)
