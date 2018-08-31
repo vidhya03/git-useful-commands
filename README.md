@@ -10,6 +10,7 @@ Useful git commands
 - [How do I force git pull to overwire local files](#how-do-i-force-git-pull-to-overwire-local-files)
 - [How do I determine the url of git repository](#how-do-i-determine-the-url-of-git-repository)
 - [How do I go to specific revision](#how-do-i-go-to-specific-revision)
+- [How do I tag a spceific commit](#how-do-i-tag-a-specific-commit)
 
 ## How to see my last commit
 
@@ -99,3 +100,31 @@ Check out the specific commit
 ```
 
 [credits](https://stackoverflow.com/questions/7539130/go-to-particular-revision?answertab=active#tab-top)
+
+## How do I tag a specific commit
+
+Tag a specific commit
+
+First note the sha or revision number
+
+```md
+git log --pretty=oneline
+```
+
+Then
+
+Tag with revision number
+
+```md
+ git tag -a v1.2 444554738120233382c5912ebbca32592ba765ad -m "Message here"
+```
+
+*Warning:* This creates tags with the current date
+
+To add a tag with specific date, add GIT_COMMITTER_DATE  environment variable with this YYYY-MM-DD HH:MM format.
+
+```md
+ GIT_COMMITTER_DATE="2006-10-02 10:31" git tag -a v1.2 444554738120233382c5912ebbca32592ba765ad -m "Message here"
+```
+
+[credits](https://stackoverflow.com/questions/4404172/how-to-tag-an-older-commit-in-git?answertab=active#tab-top)
