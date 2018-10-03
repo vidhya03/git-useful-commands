@@ -127,4 +127,16 @@ To add a tag with specific date, add GIT_COMMITTER_DATE  environment variable wi
  GIT_COMMITTER_DATE="2006-10-02 10:31" git tag -a v1.2 444554738120233382c5912ebbca32592ba765ad -m "Message here"
 ```
 
+To push a single tag:
+
+```md
+git push origin <tag_name>
+```
+
+And the following command should push all tags (not recommended):
+
+```md
+git push --tags
+```
+
 [credits](https://stackoverflow.com/questions/4404172/how-to-tag-an-older-commit-in-git?answertab=active#tab-top)
