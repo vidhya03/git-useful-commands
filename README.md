@@ -11,6 +11,7 @@ Useful git commands
 - [How do I determine the url of git repository](#how-do-i-determine-the-url-of-git-repository)
 - [How do I go to specific revision](#how-do-i-go-to-specific-revision)
 - [How do I tag a spceific commit](#how-do-i-tag-a-specific-commit)
+- [How do I delete a specific branch](#how-do-i-delete-a-specific-branch)
 
 ## How to see my last commit
 
@@ -140,3 +141,17 @@ git push --tags
 ```
 
 [credits](https://stackoverflow.com/questions/4404172/how-to-tag-an-older-commit-in-git?answertab=active#tab-top)
+
+## How do i delete a specific branch
+
+To delete the git remote branch
+
+```md
+git push --delete origin <branch_name>
+```
+
+To delete the local branch
+
+```md
+git branch -D <branch_name>
+```
