@@ -12,6 +12,7 @@ Useful git commands
 - [How do I go to specific revision](#how-do-i-go-to-specific-revision)
 - [How do I tag a specific commit](#how-do-i-tag-a-specific-commit)
 - [How do I delete a specific branch](#how-do-i-delete-a-specific-branch)
+- [How to change author in a commit](#how-to-change-author-in-a-commit)
 
 ## How to see my last commit
 
@@ -155,3 +156,12 @@ To delete the local branch
 ```md
 git branch -D <branch_name>
 ```
+
+## How to change author in a commit
+
+Sometime working in opensource and closed source, you might commit closed source with your personal email id.
+
+```md
+git commit --amend --author="vidhyadharan deivamani <it.vidhyadharan@gmail.com>" -m "commit description"
+```
+
