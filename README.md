@@ -13,6 +13,7 @@ Useful git commands
 - [How do I tag a specific commit](#how-do-i-tag-a-specific-commit)
 - [How do I delete a specific branch](#how-do-i-delete-a-specific-branch)
 - [How to change author in a commit](#how-to-change-author-in-a-commit)
+- [How to rename the git branch](#how-to-rename-the-git-branch)
 
 ## How to see my last commit
 
@@ -165,3 +166,19 @@ Sometime working in opensource and closed source, you might commit closed source
 git commit --amend --author="vidhyadharan deivamani <it.vidhyadharan@gmail.com>" -m "commit description"
 ```
 
+## How to rename the git branch
+
+To rename git local and remote branch
+
+- Rename your local branch and push to remote
+
+```md
+git branch -m old_branch_name  new_branch_name
+git push --set-upstream origin new_branch_name
+```
+
+- Delete the old remote branch and push new branch name
+
+```md
+git push origin :old_branch_name  new_branch_name
+```
