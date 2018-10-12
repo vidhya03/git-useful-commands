@@ -14,6 +14,7 @@ Useful git commands
 - [How do I delete a specific branch](#how-do-i-delete-a-specific-branch)
 - [How to change author in a commit](#how-to-change-author-in-a-commit)
 - [How to rename the git branch](#how-to-rename-the-git-branch)
+- [How do I branch a specific commit](#how-do-i-branch-a-specific-commit)
 
 ## How to see my last commit
 
@@ -181,4 +182,18 @@ git push --set-upstream origin new_branch_name
 
 ```md
 git push origin :old_branch_name  new_branch_name
+```
+
+## How do I branch a specific commit
+
+You can create the branch via a hash:
+
+```md
+git branch branchname <sha1-of-commit>
+```
+
+To checkout the branch when creating it, use
+
+```md
+git checkout -b branchname <sha1-of-commit or HEAD~3>
 ```
