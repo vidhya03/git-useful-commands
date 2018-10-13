@@ -15,6 +15,7 @@ Useful git commands
 - [How to change author in a commit](#how-to-change-author-in-a-commit)
 - [How to rename the git branch](#how-to-rename-the-git-branch)
 - [How do I branch a specific commit](#how-do-i-branch-a-specific-commit)
+- [How to reset the git password in windows](#how-to-reset-the-git-password-in-windows)
 
 ## How to see my last commit
 
@@ -197,3 +198,6 @@ To checkout the branch when creating it, use
 ```md
 git checkout -b branchname <sha1-of-commit or HEAD~3>
 ```
+
+## How to reset the git password in windows
+
