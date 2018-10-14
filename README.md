@@ -201,3 +201,12 @@ git checkout -b branchname <sha1-of-commit or HEAD~3>
 
 ## How to reset the git password in windows
 
+In windows 10 you can find Windows Credentials at :
+
+#### Control Panel\User Accounts\Credential Manager
+
+#### Control Panel\All Control Panel Items\Credential Manager --> Windows Credentials
+
+for your git server and then you can update password by clicking edit button.
+
+![Windows Credentials](resources/windows.credentials.png) 
