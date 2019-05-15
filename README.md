@@ -214,7 +214,7 @@ for your git server and then you can update password by clicking edit button.
 ![Windows Credentials](resources/windows.credentials.png) 
 
 ## How to reset a git branch 
-## How to reset a local commit 
+### How to reset a local commit 
 
  Remove all the  local commit and reset to the original remote branch
 
