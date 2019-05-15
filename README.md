@@ -17,6 +17,7 @@ Useful git commands
 - [How do I branch a specific commit](#how-do-i-branch-a-specific-commit)
 - [How to reset the git password in windows](#how-to-reset-the-git-password-in-windows)
 - [How to reset a git branch](#how-to-reset-git-branch)
+- [How to reset a local commit](#how-to-reset-git-branch)
 
 ## How to see my last commit
 
@@ -212,7 +213,10 @@ for your git server and then you can update password by clicking edit button.
 
 ![Windows Credentials](resources/windows.credentials.png) 
 
-## How to reset a git branch
+## How to reset a git branch 
+## How to reset a local commit 
+
+ Remove all the  local commit and reset to the original remote branch
 
 ```md
 git reset --hard origin/master
