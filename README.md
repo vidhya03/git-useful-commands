@@ -16,8 +16,8 @@ Useful git commands
 - [How to rename the git branch](#how-to-rename-the-git-branch)
 - [How do I branch a specific commit](#how-do-i-branch-a-specific-commit)
 - [How to reset the git password in windows](#how-to-reset-the-git-password-in-windows)
-- [How to reset a git branch](#how-to-reset-git-branch)
-- [How to reset a local commit](#how-to-reset-git-branch)
+- [How to reset a git branch](#how-to-reset-a-git-branch)
+- [How to reset a local commit](#how-to-reset-a-git-branch)
 
 ## How to see my last commit
 
