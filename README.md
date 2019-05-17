@@ -226,7 +226,7 @@ git reset --hard origin/master
 ## How to resolve merge conflicts
 
 One of the challenging task is resolving merge conflicts on Pull Request. Below command help you to merge with theirs strategy
-
+ 
 ### Merge on theirs
 
 ```md
