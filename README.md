@@ -226,10 +226,18 @@ git reset --hard origin/master
 ## How to resolve merge conflicts
 
 One of the challenging task is resolving merge conflicts on Pull Request. Below command help you to merge with theirs strategy
- 
+
 ### Merge on theirs
+
+Step 1:
 
 ```md
 git checkout branch_A
-git pull origin branch_B -X theirs 
+git pull origin branch_B -X theirs
 ```
+
+Step 2: After the merge conflicts are resolved, stage the changes accordingly, commit the changes and push.
+
+git commit
+git push origin HEAD
+Step 3: The pull request will be updated and marked as merged.
