@@ -18,6 +18,7 @@ Useful git commands
 - [How to reset the git password in windows](#how-to-reset-the-git-password-in-windows)
 - [How to reset a git branch](#how-to-reset-a-git-branch)
 - [How to reset a local commit](#how-to-reset-a-git-branch)
+- [How to resolve merge conflicts](#how-to-resolve-merge-conflicts)
 
 ## How to see my last commit
 
@@ -220,4 +221,15 @@ for your git server and then you can update password by clicking edit button.
 
 ```md
 git reset --hard origin/master
+```
+
+## How to resolve merge conflicts
+
+One of the challenging task is resolving merge conflicts on Pull Request. Below command help you to merge with theirs strategy
+
+### Merge on theirs
+
+```md
+git checkout branch_A
+git pull origin branch_B -X theirs 
 ```
