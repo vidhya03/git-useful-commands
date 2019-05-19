@@ -238,6 +238,9 @@ git pull origin branch_B -X theirs
 
 Step 2: After the merge conflicts are resolved, stage the changes accordingly, commit the changes and push.
 
+```md
 git commit
 git push origin HEAD
+```
+
 Step 3: The pull request will be updated and marked as merged.
