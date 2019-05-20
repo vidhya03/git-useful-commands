@@ -241,6 +241,8 @@ Step 2: After the merge conflicts are resolved, stage the changes accordingly, c
 ```md
 git commit
 git push origin HEAD
+or
+git push origin origin/branch_A
 ```
 
 Step 3: The pull request will be updated and marked as merged.
