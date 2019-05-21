@@ -20,6 +20,7 @@ Useful git commands
 - [How to reset a local commit](#how-to-reset-a-git-branch)
 - [How to resolve merge conflicts](#how-to-resolve-merge-conflicts)
 - [How to view git stash files](#how-to-view-git-stash-files)
+- [How to git stash specific files under a path](#Git-stash-specific-files-under-a-path)
 
 ## How to see my last commit
 
@@ -260,4 +261,10 @@ To view only the file name on a particular stash
 ```md
 git stash show --name-only -p stash@{3}
 git stash show --name-status -p stash@{3}
+```
+
+## How to git stash specific files under a path
+
+```md
+ git stash push -m "application conf" src/main/resources/config/
 ```
