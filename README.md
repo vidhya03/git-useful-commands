@@ -21,7 +21,7 @@ Useful git commands
 - [How to resolve merge conflicts](#how-to-resolve-merge-conflicts)
 - [How to view git stash files](#how-to-view-git-stash-files)
 - [How to git stash specific files under a path](#Git-stash-specific-files-under-a-path)
-
+- [How to move a commit from one branch to another using cherry-pick](#how-to-move-a-commit-from-one-branch-to-another-using-cherry-pick)
 ## How to see my last commit
 
 This command is useful to see 'my last commit'
