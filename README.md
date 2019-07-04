@@ -19,6 +19,7 @@ Useful git commands
 - [How to reset a git branch](#how-to-reset-a-git-branch)
 - [How to reset a local commit](#how-to-reset-a-git-branch)
 - [How to resolve merge conflicts](#how-to-resolve-merge-conflicts)
+- [How to view git stash files](#how-to-view-git-stash-files)
 
 ## How to see my last commit
 
@@ -246,3 +247,10 @@ git push origin origin/branch_A
 ```
 
 Step 3: The pull request will be updated and marked as merged.
+
+## How to view git stash files
+
+```md
+git stash list --name-status
+```
+
