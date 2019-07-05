@@ -252,5 +252,12 @@ Step 3: The pull request will be updated and marked as merged.
 
 ```md
 git stash list --name-status
+git stash list --name-only
 ```
 
+To view only the file name on a particular stash
+
+```md
+git stash show --name-only -p stash@{3}
+git stash show --name-status -p stash@{3}
+```
