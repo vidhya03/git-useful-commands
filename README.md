@@ -21,7 +21,9 @@ Useful git commands
 - [How to resolve merge conflicts](#how-to-resolve-merge-conflicts)
 - [How to view git stash files](#how-to-view-git-stash-files)
 - [How to git stash specific files under a path](#Git-stash-specific-files-under-a-path)
+- [How to revert merge commit](#how-to-revert-merge-commit)
 - [How to move a commit from one branch to another using cherry-pick](#how-to-move-a-commit-from-one-branch-to-another-using-cherry-pick)
+
 
 ## How to see my last commit
 
@@ -268,4 +270,22 @@ git stash show --name-status -p stash@{3}
 
 ```md
  git stash push -m "application conf" src/main/resources/config/
+```
+
+## How to revert merge commit
+```md
+ git revert -m 1 <commit-hash> 
+ where commit-hash is the merge commit id
+ git push -u origin master 
+```
+
+## How to move a commit from one branch to another using cherry-pick
+
+Some times we  need to copy a particular commit into another branch.
+we can use cherry-pick
+
+```md
+git checkout <branch you want to apply> or git checkout release_branch
+git cherry-pick <commit hash> or git cherry-pick 3a756d18a21
+
 ```
