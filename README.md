@@ -22,7 +22,7 @@ Useful git commands
 - [How to view git stash files](#how-to-view-git-stash-files)
 - [How to git stash specific files under a path](#Git-stash-specific-files-under-a-path)
 - [How to revert merge commit](#how-to-revert-merge-commit)
-- [How to move a commit from one branch to another using cherry-pick](#how-to-move-a-commit-from-one-branch-to-another-using-cherry-pick)
+- [How to pick a commit from one branch to another using cherry-pick](#how-to-pick-a-commit-from-one-branch-to-another-using-cherry-pick)
 
 
 ## How to see my last commit
@@ -279,13 +279,19 @@ git stash show --name-status -p stash@{3}
  git push -u origin master 
 ```
 
-## How to move a commit from one branch to another using cherry-pick
+## How to pick a commit from one branch to another using cherry-pick
 
 Some times we  need to copy a particular commit into another branch.
 we can use cherry-pick
 
+    -x
+    When recording the commit, append a line that says "(cherry picked from commit …​)" to the original commit message in order to indicate which commit this change was cherry-picked from. This is done only for cherry picks without conflicts. Do not use this option if you are cherry-picking from your private branch because the information is useless to the recipient. If on the other hand you are cherry-picking between two publicly visible branches (e.g. backporting a fix to a maintenance branch for an older release from a development branch), adding this information can be useful.
+
+
 ```md
 git checkout <branch you want to apply> or git checkout release_branch
 git cherry-pick <commit hash> or git cherry-pick 3a756d18a21
+or
+ git cherry-pick -x 3a756d18a21
 
 ```
