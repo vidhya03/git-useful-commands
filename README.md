@@ -254,6 +254,8 @@ Step 3: The pull request will be updated and marked as merged.
 
 ## How to view git stash files
 
+git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on. Stashing is handy if you need to quickly switch context and work on something else, but you're mid-way through a code change and aren't quite ready to commit.
+
 ```md
 git stash list --name-status
 git stash list --name-only
